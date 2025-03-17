@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Contactanos</title>
+</head>
+<body>
+     <!-- Formulario -->
+     <section>
+            <h2>Contacto</h2>
+            <form class="formulario" method="post">
+                <h4>Nosotros nos pondremos en contacto en cuanto nos envies los siguientes datos</h4>
+                <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Tu nombre" autocomplete="additional-name" required>
+                        </div>
+                        <div class="campo">
+                            <label for="mail">Correo:</label>
+                            <input type="email" name="mail" id="mail" placeholder="mail@host" required>
+                        </div>
+                        <div class="campo">
+                            <label for="tel">Telefono: </label>
+                            <input type="tel" id="tel" placeholder="Tu telefono" required>
+                        </div>
+                        <div class="campo">
+                            <label for="msg">Mensaje:</label>
+                            <textarea id="msg"></textarea>
+                        </div>
+                        <div class="btn-submit">
+                            <button type="submit" title="Enviar formulario">Enviar</button>
+                        </div>
+                </div>
+            </form>
+    </section>
+</body>
+</html>
