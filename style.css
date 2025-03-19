@@ -5,8 +5,7 @@
     --primario: #FFC107;
     --secundario: #9b9b4d;
     --fondo: #ffffea;
-    --gris: #757575;
-    --grisClaro: #DFE9F3;
+    --hover_color: #383838;
 }
 
 /* Propiedades globales*/
@@ -74,8 +73,7 @@ header.mainHeader .mainNavigation {
 }
 
 .mainNavigation a:hover {
-    color: #000;
-    background-color: var(--blanco);
+    background-color: var(--hover_color);
 }
 
 /* aside */
