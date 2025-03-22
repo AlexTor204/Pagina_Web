@@ -1,7 +1,10 @@
 :root {
-    --titulos: #FFC107;
+    --primario: #FFC107;
     --secundario: #817878;
     --fondo: #ffffea;
+    --hover_color: #383838;
+    --navColor: #9b9b4d;
+    --blanco: #FFF;
 }
 
 /* Propiedades globales*/
@@ -29,16 +32,42 @@ h2 {
     font-size: 2.8rem;
 }
 
+h1 {
+    text-align: center;
+    color: var(--primario);
+}
+
+h1 span {
+    font-size: 1.8rem;
+    color: #fa81df;
+}
 h4 {
     font-size: 1.8;
     text-align: center;
-    color: var(--titulos);
+    color: var(--primario);
     font-weight: 500;
 }
+/* Navegacion */
+.navigation {
+    align-items: center;
+    background-color: var(--navColor);
+}
+.navigation a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2.5rem;
+    text-decoration: none;
+    color: var(--blanco);
+    transition: background-color 0.3s ease;
+}
 
+.navigation a:hover {
+    background-color:var(--hover_color);
+}
 
 /* Formulario */
-section {
+.form {
     justify-items: center;
 }
 
@@ -92,6 +121,9 @@ section {
 }
 
 @media (min-width: 740px) {
+    .navigation {
+        display: flex;
+    }
     .contenedor-campos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
